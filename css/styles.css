@@ -28,6 +28,8 @@
   --filters-btn-portfolio: #ffffff;
   --portfolio-title: #2e2f42;
   --portfolio-text: #434455;
+  --dg-gradient: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+  --icon-box: #f4f4fd;
 }
 p,
 h1,
@@ -152,9 +154,17 @@ body {
 /* ========HERO============*/
 .hero {
   background: var(--hero);
+  background-image: var(--dg-gradient), url(../images/fon/people-office.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -218,6 +228,18 @@ body {
   letter-spacing: 0.02em;
   color: var(--features-title);
   margin-bottom: 8px;
+}
+.icon-box {
+  height: 112px;
+  background-color: var(--icon-box);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.icon {
+  width: 64px;
+  height: 64px;
 }
 /* ============doing========== */
 .doing {
@@ -289,6 +311,16 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--time-text);
+}
+/* ========== Customers=========*/
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
 }
 /* =============footer============== */
 .footer {
