@@ -28,7 +28,7 @@
   --filters-btn-portfolio: #ffffff;
   --portfolio-title: #2e2f42;
   --portfolio-text: #434455;
-  --dg-gradient: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+  --dg-gradient: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
   --icon-box: #f4f4fd;
 }
 p,
@@ -207,7 +207,6 @@ body {
 
 /* ===========Features======== */
 .features {
-  padding-top: 120px;
 }
 .features-list {
   display: flex;
@@ -215,7 +214,6 @@ body {
 }
 .features-item {
   width: 264px;
-  height: 104px;
 }
 .features-text {
   font-size: 16px;
@@ -289,8 +287,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.list {
-}
+
 .time-item {
   background-color: var(--time-item);
   width: calc((100% - 72px) / 4);
@@ -298,8 +295,7 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
-.item {
-}
+
 .time-title-name {
   font-weight: 500;
   font-size: 20px;
@@ -326,7 +322,6 @@ body {
 .time-network-item {
   width: 40px;
   height: 40px;
-  margin-bottom: 32px;
 }
 .social-netwerk-link {
   width: 100%;
@@ -364,7 +359,7 @@ body {
   gap: 24px;
 }
 .customers-item {
-  width: 168px;
+  width: calc((100% - 120px) / 6);
   height: 88px;
 }
 .customers-link {
@@ -466,6 +461,8 @@ body {
   background-color: #31d0aa;
 }
 .footer-social-netwerk-icon {
+  width: 24px;
+  height: 24px;
   fill: #ffffff;
 }
 
@@ -487,8 +484,7 @@ body {
 }
 .filters-item {
 }
-.link {
-}
+
 .filters-btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -513,6 +509,7 @@ body {
 .filters-btn:hover,
 .filters-btn:focus {
   color: var(--filters-btn-portfolio);
+  border-color: var(--filters-btn-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
